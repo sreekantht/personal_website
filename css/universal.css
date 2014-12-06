@@ -1,0 +1,159 @@
+#section1{
+    background-color: rgb(2,58,64);
+
+}
+
+#section2{
+    background-color: rgb(2,115,115);
+}
+
+#section3{
+    background-color: rgb(3,166,166);
+}
+
+.navbar-btn{
+    margin-right: 5%;
+}
+
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.custom-btn{
+    margin-right: 25px;
+    background: rgba(0, 0, 0, .3);
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: rgb(217,217,217);
+    font-size: larger;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    outline:none;
+    font-size: larger;
+}
+
+#title{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2%;
+}
+
+.logo:hover img {
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transform:scale(1.2);
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+/*
+.panel-custom{
+    margin: 5%;
+}
+
+.panel-transparent {
+    background: none;
+}
+
+.panel-transparent .panel-heading{
+    background: rgba(2, 115, 115, 0.1)!important;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(2, 115, 115, 0.1)!important;
+}  */
+
+.ken-panel{
+    border: solid transparent;
+    background: rgba(0,0,0,0.2);
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+    margin: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.ken-panel .panel-header{
+    position: relative;
+    top: -6%;
+    color: #ffffff ;
+    border-bottom: solid thin cadetblue;
+}
+
+.ken-panel .panel-footer{
+    background-color: transparent;
+    position: relative;
+    top: 23.5vh;
+    vertical-align: bottom;
+    height:auto;
+    border-top: solid thin cadetblue;
+    overflow: auto;
+}
+
+.ken-panel .panel-body{
+    height: 24.2vh;
+    position: relative;
+    top: -7vh;
+    overflow: hidden;
+    padding: 0;
+}
+.ken-panel .panel-body .img_bar{
+    margin: 0;
+    padding: 0;
+    max-height: 11vh;
+    width: 100%;
+    overflow: hidden;
+}
+.ken-panel .panel-body img{
+    float: left;
+    max-height: 10vh;
+    max-width: 20%;
+    margin-right: 1vh;
+    margin-bottom: 0.7vh;
+    margin-top: 0.5vh;
+    margin-left: 0.6vh;
+}
+
+.ken-panel .panel-footer .more_button{
+    float: right;
+    height: 2vh;
+    border: none;
+    margin: 0;
+    padding: 0;
+    right: 2.5vh;
+    background-color: transparent;
+    outline: none;
+}
+
+.ken-panel .panel-body p{
+    color: #ffffff;
+}
+
+.btn-disable{
+    cursor: default !important;
+    outline: none !important;
+}

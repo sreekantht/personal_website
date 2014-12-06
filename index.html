@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--fullPage.js plugin-->
+    <script src="./jquery/jquery-1.11.1.min.js"></script>
+    <link href="./onePage/jquery.fullPage.css" rel="stylesheet">
+    <script src="./onePage/jquery.fullPage.min.js"></script>
+    <script src="./onePage/jquery.easings.min.js"></script>
+    <link href="./css/universal.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage(
+                    {verticalCentered: false,
+                     paddingTop: '10px'}
+            );
+        });
+
+        $(function(){
+            $('[data-toggle=popover]').popover({
+              trigger: 'focus',
+              html: true,
+              title: 'Toolbox'
+        }) 
+        });
+    </script>
+
+    <!--Bootstrap plugin-->
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(2,115,115);">
+
+        <!--Implement all the expand botton-->
+            <div class="modal fade" id="mrBlack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Mr.Black</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="xbee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Xbee</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="smartEyeglass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">What</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+             <div class="modal fade" id="tspot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">ThoughtSpot App</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="myo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">AutoComis</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Data Acquision System</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="bridge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Mat-Board Bridge</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="notabilia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Notabilia Website</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="kencv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Personal Website</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="onTrack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">onTrack</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="ibeacon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Hospital Patient Organizer</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+       <!-- Implements the navbar -->
+        <div class="navbar navbar-fixed-top">
+            <div class="nav navbar-nav navbar-right">
+                <button class="custom-btn" onclick="$.fn.fullpage.moveTo('1')">Summary</button>
+                <button class="custom-btn" onclick="$.fn.fullpage.moveTo('2')">Projects</button>
+                <button class="custom-btn" onclick="$.fn.fullpage.moveTo('3')">Contact</button>
+            </div>
+        </div>
+
+<div id="fullpage">
+
+
+    <div class="section" id="section1">
+
+
+        <div class="row" id="title">
+            <div class="col-lg-3">
+                <h1 style="color:rgb(217,217,217); background-color: transparent; font-size: 500%">Ken Liao</h1>
+            </div>
+            <div class="col-lg-9">
+
+                    <div class="logo" id="logo_engineer">
+                        <img src="./pictures/eng_logo.png" alt="engineering logo" height=220px width=220px style="float:left; margin-left: 5%" data-toggle=popover tabindex="50" data-content="test <b>text</b>" data-placement="right">
+                    </div>
+                    <div class="logo">
+                        <img src="./pictures/Code.png" alt="code logo" height=220px width=220px style="float:left; margin-left: 5%">
+                    </div>
+                    <div class="logo">
+                        <img src="./pictures/tutor.png" alt="tutor logo" height=220px width=220px style="float:left; margin-left: 5%">
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="section" id="section2">
+        <div class="slide">
+            <div class="container-fluid">
+            <div class="row" style="height: 5vh; margin-left:5%">
+                <h3 style="color: #ffffff; opacity: 0.6">1/2</h3>
+            </div>
+
+            <div class="row" style="height:45vh;">
+                <div class="col-lg-4">
+
+
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>Robot Mr. Black</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn-primary btn btn-xs btn-disable">Robotic</button>
+                            <button class="btn-info btn btn-xs btn-disable">Electromechnical</button>
+                            <button class="btn-success btn btn-xs btn-disable">Assembly</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#mrBlack"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/robot/pic1.jpg" alt="aer201">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p> This autonomous machine mechanically turned on/off 9 candlelight LED and report their
+                           quality. It has 3 subsystems: Electromechanical, Electrical and Micro-controller.
+                                It was designed, machined and fabricated over the course of 4 months by 3 "engineers".</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>Wireless Robot Controller</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn btn-xs btn-primary btn-disable">Hardware</button>
+                            <button class="btn btn-xs btn-info btn-disable">Arduino</button>
+                            <button class="btn btn-xs btn-success btn-disable">Robotic</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#xbee"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/personal.jpg" alt="aer201">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p> Using 2 Xbee + Ardunio Uno Combo to implement a wireless E-stop for an autonomous rover. One Xbee is controlled by a push button.
+                            The other Xbee is connect to Op-Amp and Relay circuit. When user press down the button. It cuts off the power from battery.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>Smart Eyeglass</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn btn-xs btn-info btn-disable">Arduino</button>
+                            <button class="btn btn-xs btn-success btn-disable">Design</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#smartEyeglass"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/smartEyeglass/pic1.jpg" alt="aer201">
+                                <img src="./pictures/smartEyeglass/pic2.jpg" alt="wat">
+                                <img src="./pictures/smartEyeglass/pic3.jpg" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p> A low-fatality prototype of an eyeglass that is capable of detecting sound from surrounding traffic. It is used to alert
+                            the users (which is targeted to be deaf cyclists) which way are the cars coming from. The prototype is built on Arduino Leonardo
+                            with a microphone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="height:45vh">
+                <div class="col-lg-4">
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>ThoughtSpot App</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn btn-xs btn-primary btn-disable">Backend</button>
+                            <button class="btn btn-xs btn-info btn-disable">Django</button>
+                            <button class="btn btn-xs btn-success btn-disable">Android</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#tspot"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/personal.jpg" alt="aer201">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p>A Hack from the ThoughtSpot Hackathon. It is an android app that used a backend built on Django and served on Google
+                            App Engine. It used data provided by ThoughtSpot to give a better UI/UX experience to users with additional function.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>AutoComis</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn btn-xs btn-primary btn-disable">Lua</button>
+                            <button class="btn btn-xs btn-info btn-disable">Arduino</button>
+                            <button class="btn btn-xs btn-success btn-disable">MeU LED</button>
+                            <button class="btn btn-xs btn-warning btn-disable">Wearable</button>
+                            <button class="btn btn-xs btn-danger btn-disable">Myo</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#myo"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/personal.jpg" alt="aer201">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p>
+                                A Wearble Hack from N36 Wearable Hackathon. It integrates the Myo with a MeU wearable LED array.It enhances the communication between drivers by displaying emoticon on MeU based on gesture. Won 3rd place.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ken-panel">
+                        <div class="panel-header"><h2>Data Acquision System</h2></div>
+                        <div class="panel-footer">
+                            <button class="btn btn-xs btn-info btn-disable">Labview</button>
+                            <button class="btn btn-xs btn-success btn-disable">Matlab</button>
+                            <button class="btn btn-xs btn-warning btn-disable">PID Controller</button>
+                            <button class="btn btn-xs btn-danger btn-disable">Research</button>
+                            <button class="more_button" type="button" data-toggle="modal" data-target="#data"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></button>
+                        </div>
+                         <div class="panel-body">
+                            <div class="img_bar">
+                                <img src="./pictures/dataSystem/pic1.jpg" alt="aer201">
+                                <img src="./pictures/dataSystem/pic2.jpg" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                                <img src="./pictures/Code.png" alt="wat">
+                            </div>
+                            <p>
+                                Coded and optimized the data acquision system of a lab apparatus at U of T. Included a new user interface, new control of LED based on
+                                 Camera action and take data from several new sensors. The data system acquision is coded in Labview.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container-fluid">
+                <div class="row" style="height: 5vh; margin-left:5%">
+                    <h3 style="color: #ffffff; opacity: 0.6">2/2</h3>
+                </div>
+
+                <div class="row" style="height:45vh;">
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+                            <div class="panel-header"><h2>Mat-Board Bridge</h2></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-xs btn-primary btn-disable">Civil</button>
+                                <button class="btn btn-xs btn-info btn-disable">Design</button>
+                                <button class="btn btn-xs btn-success btn-disable">Engineering</button>
+                                <button class="more_button" type="button" data-toggle="modal" data-target="#bridge"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="panel-body">
+                                <div class="img_bar">
+                                    <img src="./pictures/bridge/pic1.jpg" alt="aer201">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                </div>
+                                <p>
+                                    A bridge constructed with mat-board and glue. It was capable to support around 1250N. 
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+                            <div class="panel-header"><h2>Notabilia Website</h2></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-xs btn-primary btn-disable">Bootstrap</button>
+                                <button class="btn btn-xs btn-info btn-disable">CSS3</button>
+                                <button class="btn btn-xs btn-success btn-disable">jQeury</button>
+                                <button class="btn btn-xs btn-warning btn-disable">PHP</button>
+                                <button class="more_button" type="button" data-toggle="modal" data-target="#notabilia"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="panel-body">
+                                <div class="img_bar">
+                                    <img src="./pictures/personal.jpg" alt="aer201">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                </div>
+                                <p>
+                                    A website built on Bootstrap, PHP, MySQL, HTML5, CSS3 and jQuery. It is a website for a tutoring school, Notabilia Ltd. SEO is also implemented. The site
+                                    is still under construction.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+                            <div class="panel-header"><h2>Personal Website</h2></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-xs btn-primary btn-disable">Bootstrap</button>
+                                <button class="btn btn-xs btn-info btn-disable">CSS3</button>
+                                <button class="btn btn-xs btn-success btn-disable">jQeury</button>
+                                <button class="btn btn-xs btn-warning btn-disable">FullPage.js</button>
+                                <button class="btn btn-xs btn-warning btn-danger">PS</button>
+                                <button class="more_button" type="button" data-toggle="modal" data-target="#kencv"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                                </button>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="img_bar">
+                                    <img src="./pictures/personal.jpg" alt="aer201">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                </div>
+                                <p>
+                                    A website built on Bootstrap, jQuery, FullPage.js, CSS3 and HTML5. It is also an experimentation of flat page design. This site is upgrading to be more
+                                    responsive. 
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height:45vh">
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+                            <div class="panel-header"><h2>onTrack</h2></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-xs btn-primary btn-disable">html5</button>
+                                <button class="btn btn-xs btn-info btn-disable">CSS3</button>
+                                <button class="btn btn-xs btn-success btn-disable">jQeury</button>
+                                <button class="btn btn-xs btn-warning btn-disable">Node.js</button>
+                                <button class="btn btn-xs btn-danger btn-disable">MySQL</button>
+                                <button class="more_button" type="button" data-toggle="modal" data-target="#onTrack"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                             <div class="panel-body">
+                                <div class="img_bar">
+                                    <img src="./pictures/personal.jpg" alt="aer201">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                </div>
+                                <p>
+                                    A webapp that helps you to stay on track of your task, your financial activity, news and goals in life. It is under constuction.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+                            <div class="panel-header"><h2>Hospital Patient Organizer</h2></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-xs btn-primary btn-disable">backend</button>
+                                <button class="btn btn-xs btn-info btn-disable">php</button>
+                                <button class="btn btn-xs btn-success btn-disable">MySQL</button>
+                                <button class="more_button" type="button" data-toggle="modal" data-target="#ibeacon"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                             <div class="panel-body">
+                                <div class="img_bar">
+                                    <img src="./pictures/personal.jpg" alt="aer201">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                    <img src="./pictures/Code.png" alt="wat">
+                                </div>
+                                <p>
+                                    A simple webapp that retrieve "patient" data in a hospital. The first webapp that I developed.   
+                                </p>
+                        </div>
+                        </div>  
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ken-panel">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="section" id="section3">Section 3
+    </div>
+</div>
+
+<div class="row">
+    <div class="navbar navbar-fixed-bottom center">
+        <div class="navbar-inner">
+            <button onclick="$.fn.fullpage.moveSectionDown();" style="background-color: transparent; border:transparent; outline: none">
+                <img src="./pictures/down.png" alt="down" height="50px" width="50px">
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
